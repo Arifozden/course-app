@@ -6,6 +6,7 @@ import CoursesPage from "./pages/CoursesPage";
 
 const router = createBrowserRouter([
   { path: "/", element: <HomePage /> },
+  { path: "/home", element: <HomePage /> },
   { path: "/about", element: <AboutPage /> },
   { path: "/courses", element: <CoursesPage /> },
 ]);

@@ -3,7 +3,7 @@ export default function MainLayout() {
     return (
         <div id="main-layout">
             <header>
-        <h1>Main Layout</h1>
+        <h1>Course App</h1>
         <nav>
     <NavLink to="/" end>Home</NavLink>
       <NavLink to="about">About</NavLink>  

@@ -8,8 +8,13 @@ export default function CoursesPage() {
     <div id="courses">
       
       {courses.map((item) => (
-        <div className="card">
-
+        <div key={item.id} className="card">
+          <img src={`http://localhost:5000/images/${item.image}`} alt={item.title} />
+          <div>
+            <h4>{item.title}</h4>
+            <p>{item.description}</p>
+            <a href="$">Details</a>
+            </div>
       </div>
       ))}
     </div>

@@ -1,10 +1,11 @@
+import { NavLink } from "react-router"
 export default function HomePage() {
   return (
     <>
     <nav>
-    <Link to="/">Home</Link>
-      <Link to="/about">About</Link>  
-      <Link to="/courses">Courses</Link>
+    <NavLink to="/">Home</NavLink>
+      <NavLink to="/about">About</NavLink>  
+      <NavLink to="/courses">Courses</NavLink>
     </nav>
     <div>
       <h1>Home Page</h1>

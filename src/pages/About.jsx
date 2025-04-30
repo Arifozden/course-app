@@ -1,12 +1,12 @@
-import { Link } from "react-router"
+import { NavLink } from "react-router"
 
 export default function AboutPage() {
   return (
     <>
     <nav>
-      <Link to="/">Home</Link>
-      <Link to="/about">About</Link>  
-      <Link to="/courses">Courses</Link>
+    <NavLink to="/">Home</NavLink>
+      <NavLink to="/about">About</NavLink>  
+      <NavLink to="/courses">Courses</NavLink>
     </nav>
     <div>
       <h1>About Page</h1>

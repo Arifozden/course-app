@@ -4,11 +4,15 @@ export default function CoursesPage() {
   const courses = useLoaderData();
   return (
     <>
-    
+    <h1>Courses</h1>
     <div id="courses">
-      <h1>Courses</h1>
-      <p>Welcome to the Courses page!</p>
+      
+      {courses.map((item) => (
+        <div className="card">
+
       </div>
+      ))}
+    </div>
     </>
   );
 }

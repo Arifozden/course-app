@@ -14,7 +14,9 @@ export default function MainLayout() {
     </nav>
     </header>
     <main className="container">
-        {navigation.state === "loading" && <h1>Loading...</h1>}
+        {navigation.state === "loading" && (<span>
+            <i className="fa-solid fa-spinner"></i> Loading...
+          </span>)}
         <Outlet />
     </main>
         </div>

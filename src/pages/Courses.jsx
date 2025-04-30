@@ -1,4 +1,5 @@
 import { useLoaderData } from "react-router";
+import { Link } from "react-router";
 
 export default function CoursesPage() {
   const courses = useLoaderData();
@@ -13,7 +14,7 @@ export default function CoursesPage() {
           <div>
             <h4>{item.title}</h4>
             <p>{item.description}</p>
-            <a href="$">Details</a>
+            <Link to={ "/courses/" + item.id }>Details</Link> 
             </div>
       </div>
       ))}

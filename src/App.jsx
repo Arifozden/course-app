@@ -27,6 +27,7 @@ const router = createBrowserRouter([
         path: "help",
         element: <HelpLayout/>,
         children: [
+          { index: true, element: <ContactPage /> },
           { path: "contact", element: <ContactPage /> },
           { path: "faq", element: <FAQPage /> },
         ]

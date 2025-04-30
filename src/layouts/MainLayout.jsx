@@ -7,6 +7,7 @@ export default function MainLayout() {
     <NavLink to="/" end>Home</NavLink>
       <NavLink to="about">About</NavLink>  
       <NavLink to="courses">Courses</NavLink>
+        <NavLink to="help">Help</NavLink>
     </nav>
     <main>
         <Outlet />

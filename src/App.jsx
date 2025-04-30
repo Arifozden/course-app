@@ -20,6 +20,14 @@ const router = createBrowserRouter([
       { path: "home", element: <HomePage /> },
       { path: "about", element: <AboutPage /> },
       { path: "courses", element: <CoursesPage /> },
+      {
+        path: "help",
+        element: <HelpLayout />,
+        children: [
+          { path: "contact", element: <ContactPage /> },
+          { path: "faq", element: <FAQPage /> },
+        ]
+      }
     ]
   }
 ]);

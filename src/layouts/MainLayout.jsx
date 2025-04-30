@@ -2,7 +2,7 @@ import { NavLink, Outlet } from "react-router";
 export default function MainLayout() {
     return (
         <div id="main-layout">
-            <header>
+            <header className="container">
         <h1>Course App</h1>
         <nav>
     <NavLink to="/" end>Home</NavLink>
@@ -11,7 +11,7 @@ export default function MainLayout() {
         <NavLink to="help">Help</NavLink>
     </nav>
     </header>
-    <main>
+    <main className="container">
         <Outlet />
     </main>
         </div>

@@ -1,4 +1,4 @@
-import { NavLink } from "react-router";
+import { NavLink, Outlet } from "react-router";
 export default function MainLayout() {
     return (
         <div id="main-layout">
@@ -8,6 +8,9 @@ export default function MainLayout() {
       <NavLink to="/about">About</NavLink>  
       <NavLink to="/courses">Courses</NavLink>
     </nav>
+    <main>
+        <Outlet />
+    </main>
         </div>
     );
     }

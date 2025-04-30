@@ -1,15 +1,32 @@
 
-import { createBrowserRouter, RouterProvider } from "react-router";
+import { 
+  createBrowserRouter, 
+  createRoutesFromElements, 
+  RouterProvider, 
+  Route
+ } from "react-router";
 import HomePage from "./pages/Home";
 import AboutPage from "./pages/About";
 import CoursesPage from "./pages/Courses";
+import React from "react";
 
-const router = createBrowserRouter([
-  { path: "/", element: <HomePage /> },
+
+const routes_1 = createRoutesFromElements(
+  <Route>
+    <Route path="/" element={<HomePage />} />
+    <Route path="home" element={<HomePage />} />
+    <Route path="about" element={<AboutPage />} />
+    <Route path="courses" element={<CoursesPage />} />
+  </Route>
+);
+
+
+const routes = [{ path: "/", element: <HomePage /> },
   { path: "/home", element: <HomePage /> },
   { path: "/about", element: <AboutPage /> },
-  { path: "/courses", element: <CoursesPage /> },
-]);
+  { path: "/courses", element: <CoursesPage /> },]
+
+const router = createBrowserRouter(routes_1);
 
 
 

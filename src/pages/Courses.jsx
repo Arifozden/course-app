@@ -1,8 +1,8 @@
-export default function HomePage() {
+export default function CoursesPage() {
   return (
     <>
-      <h1>Home Page</h1>
-      <p>Welcome to the home page!</p>
+      <h1>Courses Page</h1>
+      <p>Welcome to the Courses page!</p>
     </>
   );
 }

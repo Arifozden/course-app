@@ -6,7 +6,23 @@ export default function CourseDetailsPage() {
     <div className="course-details">
       <h1>{course.title}</h1>
       <div className="course-desc">
-      <img src={`http://localhost:5000/images/${item.image}`} alt={item.title} />
+      <img src={`http://localhost:5000/images/${course.image}`} alt={course.title} />
+      <div>
+        <div>
+          {course.description}
+        </div>
+        <div className="icons">
+          <span>
+            <i className="fa-regular fa-user"></i> {course.users}
+          </span>
+          <span>
+            <i className="fa-regular fa-thumbs-up"></i> {course.likes}
+          </span>
+          <span>
+            <i className="fa-regular fa-comment"></i> {course.comments}
+          </span>
+        </div>
+      </div>
       </div>
       </div>
   );

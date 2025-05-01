@@ -1,3 +1,3 @@
-export default function CourseDetailsPage() {
+export default function CourseCreatePage() {
   return <h1>Course Edit</h1>
 }

@@ -12,6 +12,8 @@ import MainLayout from "./layouts/MainLayout";
 import HelpLayout from "./layouts/HelpLayout";
 import CourseDetailsPage, {courseDetailsLoader} from "./pages/course/CourseDetails";
 import CourseLayout from "./layouts/CourseLayout";
+import CourseCreatePage from "./pages/course/CourseCreate";
+import CourseEditPage from "./pages/course/CourseEdit";
 
 
 const router = createBrowserRouter([
@@ -27,11 +29,22 @@ const router = createBrowserRouter([
         element: <CourseLayout />,
         children:[
           { index: true, element: <CoursesPage />, loader: coursesLoader },
+
           {
-        path: ":courseId", 
+            id: "course-details",
+            path: ":courseId",
+            loader: courseDetailsLoader,
+            children: [
+             {
+        index: true, 
         element: <CourseDetailsPage />,
-        loader: courseDetailsLoader,
+        
       },
+      { path: "edit", element: <CourseEditPage /> },
+            ],
+          },          
+      { path: "create", element: <CourseCreatePage /> },
+         
     ]
           },
       {

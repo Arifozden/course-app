@@ -13,6 +13,7 @@ import FAQPage from "./pages/help/FaqPage";
 import React from "react";
 import MainLayout from "./layouts/MainLayout";
 import HelpLayout from "./layouts/HelpLayout";
+import CourseDetailsPage from "./pages/CourseDetailsPage";
 
 const router = createBrowserRouter([
   {
@@ -23,7 +24,11 @@ const router = createBrowserRouter([
       { path: "home", element: <HomePage /> },
       { path: "about", element: <AboutPage /> },
       { path: "courses", element: <CoursesPage />, loader: coursesLoader },
-      {path: "courses/:courseId", element: <CourseDetailPage />},
+      {
+        path: "courses/:courseId", 
+        element: <CourseDetailsPage />,
+        loader: courseDetailsLoader,
+      },
       {
         path: "help",
         element: <HelpLayout/>,

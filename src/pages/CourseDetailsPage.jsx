@@ -1,3 +1,5 @@
+import { useLoaderData } from "react-router";
+
 export default function CourseDetailsPage() {
   const course = useLoaderData();
   return <h1>Course Details: {course.title} </h1>;

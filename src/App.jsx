@@ -13,7 +13,8 @@ import FAQPage from "./pages/help/FaqPage";
 import React from "react";
 import MainLayout from "./layouts/MainLayout";
 import HelpLayout from "./layouts/HelpLayout";
-import CourseDetailsPage from "./pages/CourseDetailsPage";
+import CourseDetailsPage, {courseDetailsLoader} from "./pages/CourseDetailsPage";
+
 
 const router = createBrowserRouter([
   {

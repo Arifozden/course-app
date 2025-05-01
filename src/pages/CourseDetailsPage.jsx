@@ -2,7 +2,14 @@ import { useLoaderData } from "react-router";
 
 export default function CourseDetailsPage() {
   const course = useLoaderData();
-  return <h1>Course Details: {course.title} </h1>;
+  return (
+    <div className="course-details">
+      <h1>{course.title}</h1>
+      <div className="course-desc">
+      <img src={`http://localhost:5000/images/${item.image}`} alt={item.title} />
+      </div>
+      </div>
+  );
 }
   
 export async function courseDetailsLoader({ params }) {
